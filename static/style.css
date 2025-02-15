@@ -64,7 +64,7 @@
     width: auto;
     height: auto;
     object-fit: cover;
-    animation: blurFade 3s ease-in-out;
+    animation: blurFade 4.5s ease-in-out;
     opacity: 0.6;
 }
 
@@ -79,27 +79,47 @@
     }
 }
 
-.welcome h1 {
+#welcome-text {
+    display: flex;
+    width: 90%;
+    gap: 1rem;
+    flex-direction: column;
+}
+
+#welcome-text h1 {
     position: relative;
     z-index: 1;
     font-size: 3rem;
     text-transform: uppercase;
-    animation: fadeSlide 2s ease-in-out;
+    animation: fadeSlideTop 2s ease-in-out;
 }
 
-@keyframes typewriter {
-    from {
-        width: 0;
-    }
-    to {
-        width: 100%;
-    }
+#welcome-text strong {
+    color: #F2785C;
 }
 
-@keyframes fadeSlide {
+#welcome-text p {
+    position: relative;
+    z-index: 1;
+    font-size: 16px;
+    animation: fadeSlideDown 2s ease-in-out;
+}
+
+@keyframes fadeSlideTop {
     from {
         opacity: 0;
-        transform: translateY(50px);
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeSlideDown {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
     }
     to {
         opacity: 1;
