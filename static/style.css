@@ -126,3 +126,13 @@
         transform: translateY(0);
     }
 }
+
+@media screen and (max-width: 768px) {
+    #welcome-text h1 {
+        font-size: 2rem;
+    }
+
+    #welcome-text p {
+        font-size: 14px;
+    }
+}

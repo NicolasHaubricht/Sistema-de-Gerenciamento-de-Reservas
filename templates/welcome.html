@@ -1,16 +1,14 @@
 {% extends "template.html" %}
-
 {% block title %}Home{% endblock %}
-
-{% block content %}
-<section class="welcome">
-    <video autoplay loop muted playsinline>
-        <source src="../static/video/background_welcome.mp4" type="video/mp4">
-        Seu navegador não suporta vídeos em HTML5.
-    </video>
-    <div id="welcome-text">
-        <h1>Welcome to our <strong>Restaurant</strong></h1>
-        <p>Welcome to our online reservation system, where you can easily book a table at our authentic Asian restaurant. Enjoy a seamless dining experience with just a few clicks, ensuring your spot for an unforgettable culinary journey. Explore the rich flavors of Asia and indulge in a unique atmosphere crafted to delight your senses. Reserve your table now and savor the essence of Asian cuisine!</p>
-    </div>
-</section>
-{% endblock %}
+    {% block content %}
+    <section class="welcome">
+        <video autoplay loop muted playsinline>
+            <source src="../static/video/background_welcome.mp4" type="video/mp4">
+            Seu navegador não suporta vídeos em HTML5.
+        </video>
+        <div id="welcome-text">
+            <h1>Welcome to our <strong>Restaurant</strong></h1>
+            <p>Welcome to our online reservation system, where you can easily book a table at our authentic Asian restaurant. Enjoy a seamless dining experience with just a few clicks, ensuring your spot for an unforgettable culinary journey. Explore the rich flavors of Asia and indulge in a unique atmosphere crafted to delight your senses. Reserve your table now and savor the essence of Asian cuisine!</p>
+        </div>
+    </section>
+    {% endblock %}
