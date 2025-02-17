@@ -1,14 +1,14 @@
 {% extends "template.html" %}
 {% block title %}Login{% endblock %}
-    {% block content %}
-    <div>
-        <h1>Login Page</h1>
-        <form method="POST" action="/login">
-            <label>Email:</label>
-            <input type="email" name="email" required placeholder="Enter your email">
-            <label>Password:</label>
-            <input type="password" name="password" required placeholder="Enter your password">
-            <button type="submit">Login</button>
-        </form>
-    </div>
-    {% endblock %}
+{% block content %}
+<div>
+    <h1>Login Page</h1>
+    <form method="POST" action="/login">
+        <label>Email:</label>
+        <input type="email" name="email" required placeholder="Enter your email">
+        <label>Password:</label>
+        <input type="password" name="password" required placeholder="Enter your password">
+        <button type="submit">Login</button>
+    </form>
+</div>
+{% endblock %}

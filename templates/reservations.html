@@ -1,28 +1,39 @@
 {% extends "template.html" %}
 {% block title %}Reservation{% endblock %}
-    {% block content %}
-    <section>
-        <div>
-            <h1>Restaurant</h1>
-        </div>
-        <div>
-            <a href="{{ url_for('create_reservation') }}">
-                <button>Create a New Reservation</button>
-            </a>
-            
+{% block content %}
+<section class="reservations">
+        <table>
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Date</th>
+                    <th>Number of Guests</th>
+                    <th>Edit</th>
+                    <th>Delete</th>
+                </tr>
+            </thead>
+    
             <tbody>
                 {% for reserva in reservas %}
                 <tr>
                     <td>{{ reserva.restaurant_name }}</td>
-                    <td>{{ reserva.date_time.strftime('%d/%m/%Y %H:%M') }}</td> 
+                    <td>{{ reserva.date_time.strftime('%d/%m/%Y %H:%M') }}</td>
                     <td>{{ reserva.num_people }}</td>
                     <td>
-                        <a href="{{ url_for('edit_reservation', id=reserva.id) }}">Editar</a>
-                        <a href="{{ url_for('delete_reservation', id=reserva.id) }}">Remover</a>
+                        <a href="{{ url_for('edit_reservation', id=reserva.id) }}">Edit</a> 
+                    </td>
+                    <td>
+                        <a href="{{ url_for('delete_reservation', id=reserva.id) }}">Delete</a>
                     </td>
                 </tr>
                 {% endfor %}
             </tbody>
-        </div>
-    </section>
-    {% endblock %}
+        </table>
+
+    <div class="create-reservation">
+        <a href="{{ url_for('create_reservation') }}">
+            <button>Create a New Reservation</button>
+        </a>
+    </div>
+</section>
+{% endblock %}

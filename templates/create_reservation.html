@@ -1,22 +1,22 @@
 {% extends "template.html" %}
 {% block title %}Create Reservation{% endblock %}
-    {% block content %}
-        <div>
-            <h1>Create a New Reservation</h1>
-            
-            <form method="POST">
-                <label for="restaurant_name">Restaurant Name:</label>
-                <input type="text" name="restaurant_name" required>
-            
-                <label for="date_time">Date and Time:</label>
-                <input type="datetime-local" name="date_time" required>
-            
-                <label for="num_people">Number of People:</label>
-                <input type="number" name="num_people" required>
-            
-                <button type="submit">Create Reservation</button>
-            </form>
-            
-            <a href="{{ url_for('reservation_list') }}">Back to Reservations</a>
-        </div>
-    {% endblock %}
+{% block content %}
+<div class="reservation-form-container">
+    <h1>Create a New Reservation</h1>
+
+    <form method="POST" class="reservation-form">
+        <label for="restaurant_name">Restaurant Name:</label>
+        <input type="text" name="restaurant_name" required>
+
+        <label for="date_time">Date and Time:</label>
+        <input type="datetime-local" name="date_time" required>
+
+        <label for="num_people">Number of People:</label>
+        <input type="number" name="num_people" required>
+
+        <button type="submit">Create Reservation</button>
+        <a href="{{ url_for('reservation_list') }}">Back to Reservations</a>
+    </form>
+
+</div>
+{% endblock %}
