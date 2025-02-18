@@ -448,7 +448,7 @@ td a:hover {
 
 @media screen and (max-width: 480px) {
     .auth-container {
-        height: auto;
+        min-height: 90dvh;
         padding: 1rem;
     }
 
