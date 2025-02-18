@@ -1,9 +1,9 @@
 {% extends "template.html" %}
 {% block title %}Signup{% endblock %}
 {% block content %}
-<div>
+<section class="auth-container">
     <h1>Signup Page</h1>
-    <form method="POST" action="/signup">
+    <form method="POST" action="/signup" class="auth-form">
         <!-- Username -->
         <label>Username:</label>
         <input type="text" name="name" required>
@@ -16,5 +16,5 @@
         <!-- Submit -->
         <button type="submit">Signup</button>
     </form>
-</div>
+</section>
 {% endblock %}
