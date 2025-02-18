@@ -143,12 +143,19 @@
     display: flex;
     flex-direction: column;
     width: 100%;
-    height: 90dvh;
+    padding: 1rem 0;
+    min-height: 90dvh;
     justify-content: center;
     align-items: center;
     background-color: #1f1f1f;
     overflow-x: auto;
     gap: 2rem;
+}
+
+.reservations-title {
+    font-size: 2rem;
+    color: #F2785C;
+    text-transform: uppercase;
 }
 
 .create-reservation {
@@ -188,7 +195,7 @@ thead th {
     border: solid 1px #fff;
     color: #F2785C;
     text-transform: uppercase;
-    font-size: 1.4rem;
+    font-size: 1.1rem;
     font-weight: 500;
     padding: 1rem;
 }
@@ -207,12 +214,21 @@ tbody td {
 
 td a {
     text-decoration: none;
+    color: #bbbbbb;
+}
+
+td a:hover {
     color: #F2785C;
 }
 
 @media screen and (max-width: 768px) {
     .reservations {
         overflow-x: auto;
+    }
+
+    .reservations-title {
+        font-size: 1.5rem;
+        text-align: center;
     }
 
     table {
@@ -235,8 +251,8 @@ td a {
         height: auto;
     }
 
-    .create-reservation {
-        width: 100%;
+    .reservations-title {
+        font-size: 1.2rem;
     }
 
     table {
