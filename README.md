@@ -29,8 +29,8 @@ Certifique-se de ter as seguintes ferramentas instaladas:
 - [Flask](https://flask.palletsprojects.com/) - Framework web para Python
 - [SQLAlchemy](https://www.sqlalchemy.org/) - ORM para manipulação do banco de dados
 - [SQLite](https://www.sqlite.org/) - Banco de dados leve e eficiente
-- [Flask-Login](https://flask-login.readthedocs.io/) - Gerenciamento de autenticação de usuários
-- HTML, CSS e JavaScript - Interface do usuário
+- [Werkzeug](https://werkzeug.palletsprojects.com/en/stable/): Biblioteca para hashing e verificação segura de senhas.
+- HTML, CSS - Interface do usuário
 
 ### 🔧 Instalação
 
@@ -39,7 +39,7 @@ Siga estas etapas para configurar o ambiente:
 1. Clone o repositório:
 
    ```bash
-   git clone https://github.com/seuusuario/gerenciamento-reservas.git
+   git clone https://github.com/NicolasHaubricht/Sistema-de-Gerenciamento-de-Reservas
 
 2. Acesse o diretório do projeto:
 
@@ -65,6 +65,3 @@ Siga estas etapas para configurar o ambiente:
 ## ✒️ Autores
 
 <li>Desenvolvimento e documentação - <a href='https://github.com/NicolasHaubricht/'>Nicolas Haubricht</a></li> 
-
-##
-Feito com dedicação por <a href='https://github.com/NicolasHaubricht/'>Nicolas Haubricht</a>
