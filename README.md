@@ -29,8 +29,8 @@ Certifique-se de ter as seguintes ferramentas instaladas:
 - [Flask](https://flask.palletsprojects.com/) - Framework web para Python
 - [SQLAlchemy](https://www.sqlalchemy.org/) - ORM para manipulação do banco de dados
 - [SQLite](https://www.sqlite.org/) - Banco de dados leve e eficiente
-- [Flask-Login](https://flask-login.readthedocs.io/) - Gerenciamento de autenticação de usuários
-- HTML, CSS e JavaScript - Interface do usuário
+- [Werkzeug](https://werkzeug.palletsprojects.com/en/stable/): Biblioteca para hashing e verificação segura de senhas.
+- HTML, CSS - Interface do usuário
 
 ### 🔧 Instalação
 
