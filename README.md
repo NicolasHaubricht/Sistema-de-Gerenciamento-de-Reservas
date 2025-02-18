@@ -39,7 +39,7 @@ Siga estas etapas para configurar o ambiente:
 1. Clone o repositório:
 
    ```bash
-   git clone https://github.com/seuusuario/gerenciamento-reservas.git
+   git clone https://github.com/NicolasHaubricht/Sistema-de-Gerenciamento-de-Reservas
 
 2. Acesse o diretório do projeto:
 
