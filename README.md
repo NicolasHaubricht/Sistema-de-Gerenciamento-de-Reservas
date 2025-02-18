@@ -65,6 +65,3 @@ Siga estas etapas para configurar o ambiente:
 ## ✒️ Autores
 
 <li>Desenvolvimento e documentação - <a href='https://github.com/NicolasHaubricht/'>Nicolas Haubricht</a></li> 
-
-##
-Feito com dedicação por <a href='https://github.com/NicolasHaubricht/'>Nicolas Haubricht</a>
