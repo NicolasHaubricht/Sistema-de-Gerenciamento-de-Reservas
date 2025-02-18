@@ -99,6 +99,7 @@
 }
 
 #welcome-text p {
+    text-align: justify;
     position: relative;
     z-index: 1;
     font-size: 16px;
